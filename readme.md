@@ -50,7 +50,7 @@ The trained model is evaluated on a validation set, and the best-performing mode
 
 ## Streamlit App
 
-A Streamlit application has been developed to facilitate the deployment of the model and enable predictions on new MRI images. The app can be accessed [here](https://brain-scan-analyzer.streamlit.app/).
+A Streamlit application has been developed to facilitate the deployment of the model and enable predictions on new MRI images. The app can be accessed [here](https://brain-scan-analyzer-njfs2grmdgkfoccd3y3kyk.streamlit.app/).
 
 ### Functionality:
 
