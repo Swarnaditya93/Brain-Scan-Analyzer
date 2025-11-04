@@ -68,8 +68,8 @@ streamlit run app.py
 ## Usage
 1. **Clone the repository**:
 ```sh
-git clone https://github.com/Swarnaditya93/Brain-Scan-Analyzer-pytorch.git
-cd BrainMRI-Tumor-Classifier-Pytorch
+git clone https://github.com/Swarnaditya93/Brain-Scan-Analyzer-Pytorch.git
+cd Brain-Scan-Analyzer-Pytorch
 ```
 2. **Install dependencies**:
 ```sh
