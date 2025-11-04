@@ -1,11 +1,3 @@
-
-# Brain Tumor Classification
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-![GitHub issues](https://img.shields.io/github/issues/HalemoGPA/BrainMRI-Tumor-Classifier-Pytorch)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/HalemoGPA/BrainMRI-Tumor-Classifier-Pytorch)
-![visitors](https://visitor-badge.laobi.icu/badge?page_id=HalemoGPA/BrainMRI-Tumor-Classifier-Pytorch)
-
-
 This repository contains a deep learning-based solution for classifying brain tumors using MRI images. The model is trained to classify images into four categories: No Tumor, Pituitary, Glioma, Meningioma
 
 ## Table of Contents
@@ -18,7 +10,6 @@ This repository contains a deep learning-based solution for classifying brain tu
   - [Evaluation](#evaluation)
   - [Streamlit App](#streamlit-app)
     - [Functionality:](#functionality)
-  - [Project Demo](#project-demo)
   - [Usage](#usage)
   - [Results](#results)
   - [Acknowledgments](#acknowledgments)
@@ -59,7 +50,7 @@ The trained model is evaluated on a validation set, and the best-performing mode
 
 ## Streamlit App
 
-A Streamlit application has been developed to facilitate the deployment of the model and enable predictions on new MRI images. The app can be accessed [here](https://brain-tumor-classification.streamlit.app/).
+A Streamlit application has been developed to facilitate the deployment of the model and enable predictions on new MRI images. The app can be accessed [here](https://brain-scan-analyzer.streamlit.app/).
 
 ### Functionality:
 
@@ -73,18 +64,11 @@ Run the Streamlit app:
 ```sh
 streamlit run app.py
 ```
-## Project Demo
-
-
-
-https://github.com/HalemoGPA/BrainMRI-Tumor-Classifier-Pytorch/assets/73307941/ed102d41-6084-4b88-ab92-07e532481ea9
-
-
 
 ## Usage
 1. **Clone the repository**:
 ```sh
-git clone https://github.com/HalemoGPA/BrainMRI-Tumor-Classifier-Pytorch.git
+git clone https://github.com/Swarnaditya93/Brain-Scan-Analyzer-pytorch.git
 cd BrainMRI-Tumor-Classifier-Pytorch
 ```
 2. **Install dependencies**:
