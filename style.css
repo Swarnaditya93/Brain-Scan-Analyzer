@@ -1,0 +1,105 @@
+/* style.css */
+
+/* Target the main Streamlit container */
+.main .block-container {
+    /* Eye-soothing background */
+    background-color: #f8faff;
+    
+    /* The border you requested */
+    border: 2px solid #cce0ff; /* Light blue border */
+    
+    /* Rounded corners */
+    border-radius: 12px;
+    
+    /* MODIFIED: Further reduced padding to fit more content for wide mode */
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+    /* Add a soft shadow for a "card" effect */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Style the title */
+h1 {
+    color: #004a99; /* Darker blue for contrast */
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 0.5rem; /* Reduced margin */
+    padding-bottom: 0.5rem; /* Reduced padding */
+}
+
+/* Style the sub-headers */
+h2, h3 {
+    color: #0056b3; /* Medium blue */
+    margin-top: 0.5rem; /* Reduced margin */
+    margin-bottom: 0.5rem; /* Reduced margin */
+}
+
+/* Style the general text for more compactness */
+.stMarkdown {
+    margin-bottom: 0.5rem; /* Reduced margin below text */
+}
+
+
+/* Style the file uploader container */
+.stFileUploader {
+    background-color: #ffffff;
+    border: 2px dashed #007bff;
+    border-radius: 8px;
+    padding: 0.8rem; /* Reduced padding */
+    margin-top: 0.5rem; /* Reduced margin */
+    margin-bottom: 1rem;
+}
+
+/* --- THIS IS THE FIX --- */
+/* Replaced the unstable .st-emotion-cache selector */
+[data-testid="stFileUploader"] button {
+    background-color: #007bff; /* A prominent blue color */
+    color: white; /* White text for contrast */
+    padding: 0.7rem 1.5rem; /* More padding to make it larger */
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+    font-size: 1.1em; /* Slightly larger text */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+[data-testid="stFileUploader"] button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    color: white; /* Ensure text stays white on hover */
+}
+/* --- END OF FIX --- */
+
+
+/* Style the sample images */
+.stImage > img {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 0.2rem; /* Reduced margin below images */
+}
+
+/* NEW: Hide the expand button on all images inside stImage container */
+.stImage button {
+    display: none;
+}
+
+/* Style for the horizontal separators */
+hr {
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+}
+
+/* Reduce whitespace around the "Choose an image..." text */
+.stFileUploader p {
+    margin-bottom: 0.5rem;
+}
+
+/* Further compaction of the 'Upload an image below to classify it.' text */
+h3 + .stMarkdown {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
