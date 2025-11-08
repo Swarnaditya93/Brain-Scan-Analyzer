@@ -1,17 +1,13 @@
-/* style.css */
 
 /* Target the main Streamlit container */
 .main .block-container {
-    /* Eye-soothing background */
     background-color: #f8faff;
     
-    /* The border you requested */
     border: 2px solid #cce0ff; /* Light blue border */
     
     /* Rounded corners */
     border-radius: 12px;
     
-    /* MODIFIED: Further reduced padding to fit more content for wide mode */
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
     padding-left: 1.5rem;
@@ -53,8 +49,6 @@ h2, h3 {
     margin-bottom: 1rem;
 }
 
-/* --- THIS IS THE FIX --- */
-/* Replaced the unstable .st-emotion-cache selector */
 [data-testid="stFileUploader"] button {
     background-color: #007bff; /* A prominent blue color */
     color: white; /* White text for contrast */
@@ -72,7 +66,6 @@ h2, h3 {
     background-color: #0056b3; /* Darker blue on hover */
     color: white; /* Ensure text stays white on hover */
 }
-/* --- END OF FIX --- */
 
 
 /* Style the sample images */
@@ -82,23 +75,19 @@ h2, h3 {
     margin-bottom: 0.2rem; /* Reduced margin below images */
 }
 
-/* NEW: Hide the expand button on all images inside stImage container */
 .stImage button {
     display: none;
 }
 
-/* Style for the horizontal separators */
 hr {
     margin-top: 0.8rem;
     margin-bottom: 0.8rem;
 }
 
-/* Reduce whitespace around the "Choose an image..." text */
 .stFileUploader p {
     margin-bottom: 0.5rem;
 }
 
-/* Further compaction of the 'Upload an image below to classify it.' text */
 h3 + .stMarkdown {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
