@@ -6,10 +6,10 @@ from torchvision import transforms
 from src.model import MyModel, load_model
 from src.utils import predict
 
-# --- Set Page to Wide Mode ---
+# Set Page to Wide Mode 
 st.set_page_config(layout="wide")
 
-# --- CSS Function ---
+# CSS Function
 def load_css(file_name):
     """Function to load a local CSS file."""
     with open(file_name) as f:
@@ -29,7 +29,7 @@ transform = transforms.Compose(
     ]
 )
 
-# --- Descriptions for each class ---
+# Descriptions for each class 
 TUMOR_DESCRIPTIONS = {
     "No Tumor": "The model has not detected any signs of a glioma, meningioma, or pituitary tumor in this scan. This indicates a healthy scan according to the model's training.",
     "Pituitary": "A Pituitary Tumor is an abnormal growth in the pituitary gland, a small, pea-sized organ at the base of the brain. Most are benign (non-cancerous) and grow slowly.",
@@ -60,18 +60,12 @@ def load_sample_images(sample_images_dir):
     for sample_image_file in sample_image_files:
         sample_image_path = os.path.join(sample_images_dir, sample_image_file)
         sample_image = Image.open(sample_image_path).convert("RGB")
-        # --- THIS IS THE FIX ---
-        # The 1200x1200 resize line has been removed.
-        # ---
         sample_images.append((sample_image_file, sample_image))
     return sample_images
 
-# --- Streamlit app ---
-
+# Streamlit app
 # Load the CSS
 load_css("style.css")
-
-# --- MODIFIED: New Title ---
 st.title("AI-Powered Brain Scan Analyzer for Tumor Classification")
 st.write("---") # Adds a horizontal line
 
@@ -102,7 +96,6 @@ except FileNotFoundError:
 
 st.write("---") # Adds a horizontal line
 
-# --- MODIFIED: More compact upload section ---
 st.write("**Upload an MRI scan below to get an instant classification.**")
 
 # image from user
@@ -133,7 +126,7 @@ if uploaded_file is not None:
             unsafe_allow_html=True,
         )
         
-        # --- NEW: Display the description ---
+        # Display the description 
         st.subheader("About this Result:")
         if prediction_name == "No Tumor":
             st.success(prediction_description)
